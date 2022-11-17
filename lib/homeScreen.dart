@@ -120,8 +120,47 @@ class HomeScreen extends StatelessWidget {
                 separatorBuilder: (context, index) => SizedBox(
                       height: 16,
                     ),
-                itemCount: articledata.length)
+                itemCount: articledata.length),
+            Text("tab 2"),
+            Text("tab 3"),
+            Text("tab 4"),
+            Text("tab 5"),
           ]),
+          bottomNavigationBar: BottomNavigationBar(
+              currentIndex: 1,
+              type: BottomNavigationBarType.fixed,
+              items: [
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.home,
+                      color: iconColor,
+                    ),
+                    label: ""),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.folder_open,
+                      color: iconColor,
+                    ),
+                    label: ""),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.favorite_border,
+                      color: iconColor,
+                    ),
+                    label: ""),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.person_add_alt_1_outlined,
+                      color: iconColor,
+                    ),
+                    label: ""),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.settings,
+                      color: iconColor,
+                    ),
+                    label: "")
+              ]),
         ));
   }
 
